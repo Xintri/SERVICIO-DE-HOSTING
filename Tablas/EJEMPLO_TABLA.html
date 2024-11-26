@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de HTML, CSS y JavaScript</title>
+    <style>
+        /* Estilo del cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif; /* Fuente de texto */
+            background-color: #f5f5f5; /* Color de fondo */
+            margin: 20px; /* Espacio exterior */
+        }
+        /* Contenedor principal */
+        .container {
+            max-width: 800px; /* Ancho máximo */
+            margin: 0 auto; /* Centrar horizontalmente */
+            padding: 20px; /* Espacio interior */
+            background-color: #fff; /* Color de fondo */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+        /* Estilo del título principal */
+        h1 {
+            text-align: center; /* Centrar el texto */
+            color: #333; /* Color del texto */
+        }
+        /* Grupo de formulario */
+        .form-group {
+            margin-bottom: 15px; /* Espacio inferior */
+        }
+        /* Estilo para las etiquetas */
+        label {
+            display: block; /* Mostrar como bloque */
+            font-weight: bold; /* Negrita */
+        }
+        /* Estilo de cajas de texto y combo */
+        input[type="text"], select {
+            width: 100%; /* Ancho completo */
+            padding: 8px; /* Espacio interior */
+            margin-top: 5px; /* Espacio superior */
+            border: 1px solid #ccc; /* Borde */
+            border-radius: 4px; /* Bordes redondeados */
+        }
+        /* Estilo de la tabla */
+        table {
+            width: 100%; /* Ancho completo */
+            border-collapse: collapse; /* Colapsar bordes */
+            margin-top: 20px; /* Espacio superior */
+        }
+        /* Bordes de la tabla */
+        table, th, td {
+            border: 1px solid #ddd; /* Borde de las celdas */
+        }
+        /* Espacio interior de celdas */
+        th, td {
+            padding: 10px; /* Espacio interior */
+            text-align: center; /* Centrar el texto */
+        }
+        /* Estilo de los encabezados de tabla */
+        th {
+            background-color: #f2f2f2; /* Color de fondo */
+        }
+        /* Estilo del botón */
+        .btn {
+            display: inline-block; /* Mostrar como bloque en línea */
+            padding: 10px 20px; /* Espacio interior */
+            font-size: 16px; /* Tamaño de fuente */
+            text-align: center; /* Centrar el texto */
+            color: #fff; /* Color del texto */
+            background-color: #007bff; /* Color de fondo */
+            border: none; /* Sin borde */
+            border-radius: 4px; /* Bordes redondeados */
+            cursor: pointer; /* Cambiar cursor al pasar */
+            margin-top: 10px; /* Espacio superior */
+        }
+        /* Cambio de color al pasar sobre el botón */
+        .btn:hover {
+            background-color: #0056b3; /* Color al pasar */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ejemplo de Controles</h1>
+        
+        <!-- Campo de texto para el nombre -->
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Ingresa tu nombre">
+        </div>
+        
+        <!-- Campo de texto para la edad -->
+        <div class="form-group">
+            <label for="age">Edad:</label>
+            <input type="text" id="age" placeholder="Ingresa tu edad">
+        </div>
+        
+        <!-- Caja combo para seleccionar el país -->
+        <div class="form-group">
+            <label for="country">País:</label>
+            <select id="country">
+                <option value="México">México</option>
+                <option value="Argentina">Argentina</option>
+                <option value="España">España</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Chile">Chile</option>
+            </select>
+        </div>
+        
+        <!-- Caja combo para seleccion ar el club -->
+        <div class="form-group">
+            <label for="club">Club:</label>
+            <select id="club">
+                <option value="Club América">Club América</option>
+                <option value="Chivas (Guadalajara)">Chivas (Guadalajara)</option>
+                <option value="Tigres UANL">Tigres UANL</option>
+                <option value="Cruz Azul">Cruz Azul</option>
+                <option value="Pumas UNAM">Pumas UNAM</option>
+                <option value="Boca Juniors">Boca Juniors</option>
+                <option value="River Plate">River Plate</option>
+                <option value="Independiente">Independiente</option>
+                <option value="Racing Club">Racing Club</option>
+                <option value="San Lorenzo">San Lorenzo</option>
+                <option value="FC Barcelona">FC Barcelona</option>
+                <option value="Real Madrid">Real Madrid</option>
+                <option value="Atlético de Madrid">Atlético de Madrid</option>
+                <option value="Sevilla FC">Sevilla FC</option>
+                <option value="Valencia CF">Valencia CF</option>
+                <option value="Atlético Nacional">Atlético Nacional</option>
+                <option value="Millonarios FC">Millonarios FC</option>
+                <option value="Deportivo Cali">Deportivo Cali</option>
+                <option value="Independiente Santa Fe">Independiente Santa Fe</option>
+                <option value="Junior de Barranquilla">Junior de Barranquilla</option>
+                <option value="Colo-Colo">Colo-Colo</option>
+                <option value="Universidad de Chile">Universidad de Chile</option>
+                <option value="Universidad Católica">Universidad Católica</option>
+                <option value="Audax Italiano">Audax Italiano</option>
+                <option value="Santiago Wanderers">Santiago Wanderers</option>
+            </select>
+        </div>
+        
+        <!-- Campo de texto para el sueldo anual -->
+        <div class="form-group">
+            <label for="annualSalary">Sueldo Anual:</label>
+            <input type="text" id="annualSalary" placeholder="Ingresa tu sueldo anual">
+        </div>
+        
+        <!-- Campo de texto para el sueldo mensual -->
+        <div class="form-group">
+            <label for="monthlySalary">Sueldo Mensual:</label>
+            <input type="text" id="monthlySalary" placeholder="Ingresa tu sueldo mensual">
+        </div>
+        
+        <!-- Botón para agregar datos -->
+        <button class="btn" onclick="addData()">Agregar Datos</button>
+        
+        <h2>Tabla de Datos</h2>
+        <!-- Tabla donde se mostrarán los datos ingresados -->
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>País</th>
+                    <th>Continente</th>
+                    <th>Sueldo Anual</th>
+                    <th>Sueldo Mensual</th>
+                    <th>Total</th>
+                    <th>Club</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        
+        <!-- Mostrar totales -->
+        <h2>Totales</h2>
+        <p id="totalAnnual">Total Anual: $0</p>
+        <p id="totalMonthly">Total Mensual: $0</p>
+    </div>
+
+    <script>
+        // Array bidimensional que almacenará los datos ingresados
+        let data = [];
+
+        // Función para agregar datos al array y mostrarlos en la tabla
+        function addData() {
+            // Obtener valores de las cajas de texto y combo
+            const name = document.getElementById('name').value; // Obtener el nombre
+            const age = document.getElementById('age').value; // Obtener la edad
+            const country = document.getElementById('country').value; // Obtener el país seleccionado
+            const club = document.getElementById('club').value; // Obtener el club seleccionado
+            const annualSalary = document.getElementById('annualSalary').value; // Obtener el sueldo anual
+            const monthlySalary = document.getElementById('monthlySalary').value; // Obtener el sueldo mensual
+            
+            // Validar que se hayan ingresado todos los campos
+            if (name === "" || age === "" || country === "" || club === "" || annualSalary === "" || monthlySalary === "") {
+                alert("Por favor, completa todos los campos ."); // Mostrar mensaje si falta información
+                return; // Salir de la función si hay campos vacíos
+            }
+
+            // Asignar continente según país
+            let continent;
+            switch (country) {
+                case "México":
+                case "Colombia":
+                case "Chile":
+                    continent = "América";
+                    break;
+                case "Argentina":
+                    continent = "América del Sur";
+                    break;
+                case "España":
+                    continent = "Europa";
+                    break;
+                default:
+                    continent = "Desconocido";
+            }
+
+            // Agregar los datos al array bidimensional
+            let link;
+            switch (club) {
+                case "Club América":
+                    link = `<a href="https://www.clubamerica.com.mx">${club}</a>`;
+                    break;
+                case "Chivas (Guadalajara)":
+                    link = `<a href="https://www.chivasdecorazon.com.mx">${club}</a>`;
+                    break;
+                case "Tigres UANL":
+                    link = `<a href="https://www.tigres.com.mx">${club}</a>`;
+                    break;
+                case "Cruz Azul":
+                    link = `<a href="https://www.cruzazul.mx">${club}</a>`;
+                    break;
+                case "Pumas UNAM":
+                    link = `<a href="https://www.pumas.mx">${club}</a>`;
+                    break;
+                case "Boca Juniors":
+                    link = `<a href="https://www.bocajuniors.com.ar">${club}</a>`;
+                    break;
+                case "River Plate":
+                    link = `<a href="https://www.riverplate.com.ar">${club}</a>`;
+                    break;
+                case "Independiente":
+                    link = `<a href="https://www.independiente.com.ar">${club}</a>`;
+                    break;
+                case "Racing Club":
+                    link = `<a href="https://www.racingclub.com.ar">${club}</a>`;
+                    break;
+                case "San Lorenzo":
+                    link = `<a href="https://www.sanlorenzo.com.ar">${club}</a>`;
+                    break;
+                case "FC Barcelona":
+                    link = `<a href="https://www.fcbarcelona.com">${club}</a>`;
+                    break;
+                case "Real Madrid":
+                    link = `<a href="https://www.realmadrid.com">${club}</a>`;
+                    break;
+                case "Atlético de Madrid":
+                    link = `<a href="https://www.atleticodemadrid.com">${club}</a>`;
+                    break;
+                case "Sevilla FC":
+                    link = `<a href="https://www.sevillafc.es">${club}</a>`;
+                    break;
+                case "Valencia CF":
+                    link = `<a href="https://www.valenciacf.com">${club}</a>`;
+                    break;
+                case "Atlético Nacional":
+                    link = `<a href="https://www.atlnacional.com.co">${club}</a>`;
+                    break;
+                case "Millonarios FC":
+                    link = `<a href="https://www.millonarios.com.co">${club}</a>`;
+                    break;
+                case "Deportivo Cali":
+                    link = `<a href="https://www.deportivocali.com.co">${club}</a>`;
+                    break;
+                case "Independiente Santa Fe":
+                    link = `<a href="https://www.santafe.com.co">${club}</a>`;
+                    break;
+                case "Junior de Barranquilla":
+                    link = `<a href="https://www.juniorfc.co">${club}</a>`;
+                    break;
+                case "Colo-Colo":
+                    link = `<a href="https://www.colocolo.cl">${club}</a>`;
+                    break;
+                case "Universidad de Chile":
+                    link = `<a href="https://www.udechile.cl">${club}</a>`;
+                    break;
+                case "Universidad Católica":
+                    link = `<a href="https://www.cruzados.cl">${club}</a>`;
+                    break;
+                case "Audax Italiano":
+                    link = `<a href="https://www.audaxitaliano.cl">${club}</a>`;
+                    break;
+                case "Santiago Wanderers":
+                    link = `<a href="https://www.santiagowanderers.cl">${club}</a>`;
+                    break;
+                default:
+                    link = club;
+            }
+
+            data.push([name, age, country, continent, annualSalary, monthlySalary, parseFloat(annualSalary) + parseFloat(monthlySalary), club, link]);
+
+            // Limpiar la tabla antes de llenarla de nuevo
+            const tableBody = document.querySelector("#dataTable tbody");
+            tableBody.innerHTML = ""; // Eliminar el contenido actual de la tabla
+
+            // Llenar la tabla con los datos actualizados
+            data.forEach(row => {
+                const tr = document.createElement('tr'); // Crear fila de tabla
+                row.forEach(cell => {
+                    const td = document.createElement('td'); // Crear celda de tabla
+                    td.innerHTML = cell; // Asignar texto a la celda
+                    tr.appendChild(td); // Añadir celda a la fila
+                });
+                tableBody.appendChild(tr); // Añadir fila a la tabla
+            });
+
+            // Calcular totales
+            const totalAnnual = data.reduce((acc, row) => acc + parseFloat(row[4]), 0);
+            const totalMonthly = data.reduce((acc, row) => acc + parseFloat(row[5]), 0);
+
+            // Mostrar totales
+            document.getElementById('totalAnnual').textContent = `Total Anual: $${totalAnnual.toLocaleString()}`;
+            document.getElementById('totalMonthly').textContent = `Total Mensual: $${totalMonthly.toLocaleString()}`;
+
+            // Limpiar los campos de entrada
+            document.getElementById('name').value = ""; // Limpiar el campo de nombre
+            document.getElementById('age').value = ""; // Limpiar el campo de edad
+            document.getElementById('country').value = "México"; // Restablecer el combo a "México"
+            document.getElementById('club').value = "Club América"; // Restablecer el combo a "Club América"
+            document.getElementById('annualSalary').value = ""; // Limpiar el campo de sueldo anual
+            document.getElementById('monthlySalary').value = ""; // Limpiar el campo de sueldo mensual
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Venta - Tienda de Peluches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Punto de Venta - Tienda de Peluches</h1>
+    </header>
+
+    <main>
+        <section class="featured-products">
+            <h2>Productos Destacados</h2>
+            <div class="products">
+                <div class="product" data-name="Gatoru" data-price="210">
+                    <img src="img/gatoru.jpg" alt="Gatoru Gojo" class="product-image">
+                    <h3>Gatoru Gojo</h3>
+                    <p>Precio: $210</p>
+                    <input type="number" min="1" value="1" class="quantity">
+                    <button onclick="addToCart('Gatoru', 210)">Agregar al Carrito</button>
+                </div>
+                <div class="product" data-name="Suguru" data-price="290">
+                    <img src="img/suguru.jpg" alt="Suguru Gato" class="product-image">
+                    <h3>Suguru Gato</h3>
+                    <p>Precio: $290</p>
+                    <input type="number" min="1" value="1" class="quantity">
+                    <button onclick="addToCart('Suguru', 290)">Agregar al Carrito</button>
+                </div>
+                <div class="product" data-name="Korok" data-price="340">
+                    <img src="img/korok.jpg" alt="Korok" class="product-image">
+                    <h3>Korok</h3>
+                    <p>Precio: $340</p>
+                    <input type="number" min="1" value="1" class="quantity">
+                    <button onclick="addToCart('Korok', 340)">Agregar al Carrito</button>
+                </div>
+                <div class="product" data-name="Caballero" data-price="400">
+                    <img src="img/caballero.jpg" alt="El Caballero" class="product-image">
+                    <h3>El Caballero</h3>
+                    <p>Precio: $400</p>
+                    <input type="number" min="1" value="1" class="quantity">
+                    <button onclick="addToCart('Caballero', 400)">Agregar al Carrito</button>
+                </div>
+                <div class="product" data-name="Kirby" data-price="190">
+                    <img src="img/kirby.jpg" alt="Kirby" class="product-image">
+                    <h3>Kirby</h3>
+                    <p>Precio: $190</p>
+                    <input type="number" min="1" value="1" class="quantity">
+                    <button onclick="addToCart('Kirby', 190)">Agregar al Carrito</button>
+                </div>
+                <div class="product" data-name="Gatiburcio" data-price="490">
+                    <img src="img/gatiburcio.jpg" alt="Gato Tiburon" class="product-image">
+                    <h3>Gato Tiburon</h3>
+                    <p>Precio: $490</p>
+                    <input type="number" min="1" value="1" class="quantity">
+                    <button onclick="addToCart('Gatiburcio', 490)">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="cart">
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p id="total">Total: $0</p>
+            <button onclick="clearCart()">Vaciar Carrito</button>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comentarios</h2>
+            <div id="commentItems" class="comment-items"></div>
+            <textarea id="newComment" placeholder="Escribe tu comentario"></textarea>
+            <button onclick="addComment()">Agregar Comentario</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

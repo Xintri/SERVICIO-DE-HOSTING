@@ -1,0 +1,90 @@
+    /* Estilo general */
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        color: #333;
+    }
+
+    header {
+        background-color: #0288d1;
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    h1, h2 {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        background-color: #007bb5;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        color: white;
+        padding: 15px 20px;
+        display: block;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        background-color: #005f85;
+    }
+
+    .species-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .species {
+        background-color: white;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .species img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #0288d1;
+        color: white;
+    }
+
+    footer {
+        background-color: #0288d1;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }

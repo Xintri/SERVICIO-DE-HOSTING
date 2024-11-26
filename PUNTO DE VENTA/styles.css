@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1B1B1B; /* Fondo gris oscuro */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #E0E0E0; /* Texto gris claro */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #333333; /* Fondo gris más oscuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.product {
+    background-color: #4A4A4A; /* Fondo gris oscuro */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    color: #FFFFFF; /* Texto blanco */
+    margin-bottom: 10px;
+}
+
+.product p {
+    color: #B0BEC5; /* Texto azul grisáceo claro */
+    margin-bottom: 10px;
+}
+
+.quantity {
+    width: 60px;
+    margin-right: 10px;
+    background-color: #555555; /* Fondo gris medio */
+    color: #FFFFFF; /* Texto blanco */
+    border: 1px solid #B0BEC5; /* Bordes azul grisáceo claro */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5D4037; /* Fondo marrón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8D6E63; /* Fondo marrón más claro al pasar el cursor */
+}
+
+.cart {
+    width: 100%;
+    max-width: 800px;
+    background-color: #333333; /* Fondo gris oscuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #B0BEC5; /* Bordes azul grisáceo claro */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+#total {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FFFFFF; /* Texto blanco */
+}
+
+button.clear {
+    background-color: #D32F2F; /* Fondo rojo */
+}
+
+button.clear:hover {
+    background-color: #B71C1C; /* Fondo rojo oscuro */
+}
+
+.comments-section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #B0BEC5; /* Bordes azul grisáceo claro */
+    border-radius: 8px;
+    background-color: #333333; /* Fondo gris oscuro */
+}
+
+.comment-items {
+    margin: 10px 0;
+}
+
+.comment {
+    background-color: #4A4A4A; /* Fondo gris oscuro */
+    border: 1px solid #B0BEC5; /* Bordes azul grisáceo claro */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #E0E0E0; /* Texto gris claro */
+}
+
+.comment button {
+    background-color: transparent;
+    border: none;
+    color: #D32F2F; /* Texto rojo para el botón de eliminar */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.comment button:hover {
+    color: #B71C1C; /* Texto rojo oscuro al pasar el cursor */
+}
